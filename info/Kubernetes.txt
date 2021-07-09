@@ -1,0 +1,9 @@
+Kubernetes Workload Example
+kubectl create deployment <deployment name> --image=<the deployment image>
+kubectl get deployments  # get info
+kubectl describe deployment <deployment name>  # get info
+kubectl get pods  # get info
+kubectl scale deployment/<deployment name> --replicas=<number of replicas>
+kubectl get all  # get info
+kubectl expose deployment <deployment name> --type=LoadBalancer --port=<port number>
+kubectl get services  # get info

@@ -19,3 +19,8 @@ minikube stop
 Optionally, delete the Minikube VM:
 minikube delete
 ###########################################################################################################
+
+For web
+
+kubectl get service
+minikube service <service name>

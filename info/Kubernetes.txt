@@ -1,4 +1,5 @@
 Kubernetes Workload Example
+
 kubectl create deployment <deployment name> --image=<the deployment image>
 kubectl get deployments  # get info
 kubectl describe deployment <deployment name>  # get info
@@ -7,3 +8,14 @@ kubectl scale deployment/<deployment name> --replicas=<number of replicas>
 kubectl get all  # get info
 kubectl expose deployment <deployment name> --type=LoadBalancer --port=<port number>
 kubectl get services  # get info
+###########################################################################################################
+Clean up
+
+kubectl delete service <deployment name>
+kubectl delete deployment <deployment name>
+
+Optionally, stop the Minikube virtual machine (VM):
+minikube stop
+Optionally, delete the Minikube VM:
+minikube delete
+###########################################################################################################
